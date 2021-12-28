@@ -37,7 +37,7 @@
  */
 #ifndef CONFIGURATION_H
 #define CONFIGURATION_H
-#define CONFIGURATION_H_VERSION 20211214
+#define CONFIGURATION_H_VERSION 20211228
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -1029,7 +1029,7 @@
   //#define FRONT_PROBE_BED_POSITION MIN_PROBE_EDGE
   //#define BACK_PROBE_BED_POSITION (Y_BED_SIZE - MIN_PROBE_EDGE)
   #define LEFT_PROBE_BED_POSITION 35
-  #define RIGHT_PROBE_BED_POSITION 175
+  #define RIGHT_PROBE_BED_POSITION 185
   #define FRONT_PROBE_BED_POSITION 50 
   //#define BACK_PROBE_BED_POSITION 150 
   #define BACK_PROBE_BED_POSITION 200
@@ -1264,8 +1264,8 @@
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED     90
+#define PREHEAT_2_TEMP_HOTEND 230
+#define PREHEAT_2_TEMP_BED     95
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
