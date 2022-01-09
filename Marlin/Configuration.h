@@ -468,7 +468,7 @@
 
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define BANG_MAX 200     // Limits current to nozzle while in bang-bang mode; 255=full current
+#define BANG_MAX 127 // Limits current to nozzle while in bang-bang mode; 255=full current
 #define PID_MAX BANG_MAX // Limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #define PID_K1 0.95      // Smoothing factor within any PID loop
 #if ENABLED(PIDTEMP)
@@ -485,9 +485,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   //UMO E3D Nozzle
-  #define DEFAULT_Kp 5.46
-  #define DEFAULT_Ki 0.24
-  #define DEFAULT_Kd 30.97
+  #define DEFAULT_Kp 5.86
+  #define DEFAULT_Ki 0.26
+  #define DEFAULT_Kd 32.09
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
