@@ -485,9 +485,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   //UMO E3D Nozzle
-  #define DEFAULT_Kp 5.86
-  #define DEFAULT_Ki 0.26
-  #define DEFAULT_Kd 32.09
+  #define DEFAULT_Kp 5.16
+  #define DEFAULT_Ki 0.22
+  #define DEFAULT_Kd 30.43
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
