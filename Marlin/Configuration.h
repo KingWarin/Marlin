@@ -486,8 +486,8 @@
 
   //UMO E3D Nozzle
   #define DEFAULT_Kp 5.16
-  #define DEFAULT_Ki 0.22
-  #define DEFAULT_Kd 30.43
+  #define DEFAULT_Ki 0.21
+  #define DEFAULT_Kd 31.32
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -523,7 +523,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -541,9 +541,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  #define DEFAULT_bedKp 75.53
+  #define DEFAULT_bedKi 6.78
+  #define DEFAULT_bedKd 561.02
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
