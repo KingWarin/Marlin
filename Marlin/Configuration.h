@@ -783,7 +783,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0   // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 50   // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.65   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.3   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1178,7 +1178,7 @@
  * Marlin automatically computes skew factors from these measurements.
  * Skew factors may also be computed and set manually:
  *
- *  - Compute AB     : SQRT(2*AC*AC+2*BD*BD-4*AD*AD)/2
+ *  - Compute AB     : SQRT(2*AC*AC+2*BD*BD-4*AD*AD)/2 98,833
  *  - XY_SKEW_FACTOR : TAN(PI/2-ACOS((AC*AC-AB*AB-AD*AD)/(2*AB*AD)))
  *
  * If desired, follow the same procedure for XZ and YZ.
@@ -1196,13 +1196,13 @@
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 280.20
-  #define XY_DIAG_BD 284.20
-  #define XY_SIDE_AD 199.50
+  #define XY_DIAG_AC 139.55
+  #define XY_DIAG_BD 141.71
+  #define XY_SIDE_AD 100.05
 
   // Or, set the default skew factors directly here
   // to override the above measurements:
-  // #define XY_SKEW_FACTOR -0.014175
+  #define XY_SKEW_FACTOR -0.636365
 
   //#define SKEW_CORRECTION_FOR_Z
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
