@@ -1025,7 +1025,7 @@
 #if ENABLED(AUTO_BED_LEVELING_LINEAR) || ENABLED(AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 6
+  #define GRID_MAX_POINTS_X 3
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
@@ -1196,13 +1196,13 @@
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 139.55
-  #define XY_DIAG_BD 141.71
-  #define XY_SIDE_AD 100.05
+  #define XY_DIAG_AC 139.65
+  #define XY_DIAG_BD 141.72
+  #define XY_SIDE_AD 100
 
   // Or, set the default skew factors directly here
   // to override the above measurements:
-  #define XY_SKEW_FACTOR -0.636365
+  // #define XY_SKEW_FACTOR -0.636365
 
   //#define SKEW_CORRECTION_FOR_Z
   #if ENABLED(SKEW_CORRECTION_FOR_Z)
@@ -1216,7 +1216,7 @@
   #endif
 
   // Enable this option for M852 to set skew at runtime
-  #define SKEW_CORRECTION_GCODE
+  // #define SKEW_CORRECTION_GCODE
 #endif
 
 //=============================================================================
