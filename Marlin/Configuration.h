@@ -37,7 +37,7 @@
  */
 #ifndef CONFIGURATION_H
 #define CONFIGURATION_H
-#define CONFIGURATION_H_VERSION 20220104
+#define CONFIGURATION_H_VERSION 20220723
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -413,9 +413,9 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-// #define PIDTEMPBED
+#define PIDTEMPBED
 
-#define BED_LIMIT_SWITCHING
+// #define BED_LIMIT_SWITCHING
 
 /**
  * Max Bed Power
@@ -439,6 +439,11 @@
   #define DEFAULT_bedKp 448.81
   #define DEFAULT_bedKi 75.05
   #define DEFAULT_bedKd 679.98
+
+  // PID-Tuning values for modified A8 (currently not in use as near stock seems to work perfect)
+  //#define DEFAULT_bedKp 1094.28
+  //#define DEFAULT_bedKi 215.45
+  //#define DEFAULT_bedKd 1389.46
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
